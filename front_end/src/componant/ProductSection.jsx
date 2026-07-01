@@ -13,7 +13,7 @@ export default function ProductSection({ activeCategory }) {
       setLoading(true);
       try {
         // Fetches products belonging strictly to the selected category
-        const response = await fetch(`http://187.124.131.250:3000/api/products?category=${encodeURIComponent(activeCategory)}`);
+        const response = await fetch(`http://187.124.131.250/api/products?category=${encodeURIComponent(activeCategory)}`);
         const data = await response.json();
         setProducts(data);
       } catch (error) {

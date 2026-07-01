@@ -7,7 +7,7 @@ export default function Category({ activeCategory, setActiveCategory }) {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('http://187.124.131.250:3000/api/categories');
+        const response = await fetch('http://187.124.131.250/api/categories');
         const data = await response.json();
         
         setCategories(data);
