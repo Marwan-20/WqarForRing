@@ -34,7 +34,7 @@ async function  extractInfo(text) {
               size: { type: "string", description: "The ring size or dimensions" },
               price: { type: "string", description: "The numeric price with the symbol if it found" },
               weight: { type: "string", description: "The weight including units, e.g., '4.2g' or '3 carats'" },
-              category: { type: "string", description: "extract it from the user text it may be (أحجار, ملكيات, دول ) if it was null (أخرى)" },
+              category: { type: "string", description: "extract it from the user text it may be (,بارتاش أحجار, ملكيات, دول ) if it was null (أخرى)" },
               tiktok_url: { type: "string", description: "Any TikTok video link provided. If none, return empty string." },
             },
             required: ["title", "craftsman", "size", "price", "weight", "category", "tiktok_url"],
